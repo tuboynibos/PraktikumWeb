@@ -1,2 +1,2 @@
-# TugasWebBaju
+# PraktikumWeb
 hanya sebatas tampilan web
