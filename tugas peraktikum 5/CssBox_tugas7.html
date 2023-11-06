@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .row1, .row2 {
+            display: flex;
+            gap: 10px;
+        }
+        .row1-yellow {
+            background-color: yellow;
+            flex-grow: 1;
+            height: 100px;
+        }
+        .row2-brown{
+            background-color: brown;
+            flex-grow: 3;
+            height: 100px;
+        }
+        .row1-green {
+            background-color: green;
+            flex-grow: 1;
+            height: 500px;
+        }
+        .row2-grey {
+            background-color: grey;
+            flex-grow: 2;
+            height: 500px;
+        }
+        .row3-aquamarine {
+            background-color: aquamarine;
+            flex-grow: 1;
+            height: 500px;
+        }
+        .row3{
+            background-color: blue;
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row1">
+            <div class="row1-yellow"></div>
+            <div class="row2-brown"></div>
+        </div>
+        <div class="row2">
+            <div class="row1-green"></div>
+            <div class="row2-grey"></div>
+            <div class="row3-aquamarine"></div>
+        </div>
+        <div class="row3"></div>
+    </div>
+</body>
+</html>
