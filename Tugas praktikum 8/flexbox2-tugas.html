@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      nav {
+        width: 20vw;
+        height: 102vh;
+        background-color: brown;
+        text-align: center;
+        margin: 6px;
+        border: none;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      header,
+      footer {
+        background-color: burlywood;
+        height: 20vh;
+        width: 80vw;
+        text-align: center;
+        margin: 6px;
+        margin-left: 2px;
+        border: none;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container {
+        display: flex;
+      }
+
+      .content {
+        display: flex;
+      }
+
+      article {
+        flex-grow: 1;
+        height: 60vh;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      aside {
+        width: 20vw;
+        background-color: teal;
+        text-align: center;
+        border: none;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>Nav</nav>
+      <div class="container2">
+        <header>Header</header>
+        <div class="content">
+          <article>Article</article>
+          <aside>Aside</aside>
+        </div>
+        <footer>Footer</footer>
+      </div>
+    </div>
+  </body>
+</html>
