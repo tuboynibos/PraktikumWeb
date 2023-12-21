@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Penjumlahan</title>
+  </head>
+  <body>
+    <h2>Kalkulator Penjumlahan</h2>
+<table>
+    <tr>
+    <form id="calculatorForm">
+      
+      <td><input type="number" id="angka1" name="angka1" onchange="hitungPenjumlahan()"
+        required /></td>
+    </tr>
+      <br />
+    <td>
+        <label for="plus">+</label>
+    </td>
+    <tr>
+        
+        <td><input type="number" id="angka2" name="angka2" required /></td>
+    </tr>
+    <br />
+    
+    <td>
+        <label for="samadengan">=</label>
+    </td>
+    </form>
+</table>
+<button type="button" onclick="hitungPenjumlahan()">Hitung</button>
+<div id="output"></div>
+
+    <script>
+      function hitungPenjumlahan() {
+        var angka1 = parseFloat(document.getElementById("angka1").value);
+        var angka2 = parseFloat(document.getElementById("angka2").value);
+
+        if (isNaN(angka1) || isNaN(angka2)) {
+          document.getElementById("output").innerHTML =
+            "Masukkan angka yang valid!";
+        } else {
+          var hasil = angka1 + angka2;
+          document.getElementById("output").innerHTML =
+            "Hasil penjumlahan: " + hasil;
+        }
+      }
+    </script>
+  </body>
+</html>
